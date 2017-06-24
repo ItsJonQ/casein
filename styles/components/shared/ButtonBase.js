@@ -1,27 +1,22 @@
-# Jay-C
+const defaultProps = {
+  appearance: true,
+};
 
-Writing Sass/CSS with Javascript
-
-Experimenting!
-
-Running `node index.js` will output:
-
-```
-    .c-button {
-
-
+const Style = (props = defaultProps) => {
+  const appearance = !props.appearance ? '' : `
     -webkit-appearance: none;
     appearance: none;
+  `;
 
+  return `
+    ${appearance}
     box-sizing: border-box;
     cursor: pointer;
     outline: none;
     vertical-align: middle;
     -webkit-user-select: none;
     user-select: none;
+  `;
+};
 
-      background: red;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-```
+module.exports = Style;
