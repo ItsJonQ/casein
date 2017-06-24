@@ -2,11 +2,15 @@
   "name": "jay-c",
   "version": "0.0.1",
   "description": "",
-  "homepage": "https://github.com/ItsJonQ/jay-c",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ItsJonQ <itsjonq@gmail.com> (http://jonquach.com)",
+  "homepage": "https://github.com/ItsJonQ/jay-c",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsjonq/jay-c.git"
+  },
   "license": "MIT"
 }
