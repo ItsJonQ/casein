@@ -1,9 +1,9 @@
-const components = require('./components');
+const Button = require('./components/Button');
 
 const props = {
   appearance: true,
   fontSize: '14px',
+  userSelect: false,
 };
 
-module.exports = components(props);
-// module.exports = components();
+module.exports = Button(props);

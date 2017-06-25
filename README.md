@@ -17,11 +17,17 @@ box-sizing: border-box;
 cursor: pointer;
 outline: none;
 vertical-align: middle;
--webkit-user-select: none;
-user-select: none;
+
 
     background: red;
     border-radius: 4px;
     font-size: 14px;
+
+    &:hover {
+    background: lighten(red, 4);
+    }
+    &:active {
+    background: darken(red, 4);
+    }
 }
 ```

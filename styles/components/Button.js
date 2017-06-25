@@ -1,13 +1,15 @@
 const ButtonBase = require('./shared/ButtonBase');
 
 const defaultProps = {
+  background: 'red',
   borderRadius: '4px',
   fontSize: '1em',
 };
 
-const Styles = (p) => {
+const Button = (p) => {
   const props = Object.assign({}, defaultProps, p);
   const {
+    background,
     borderRadius,
     fontSize,
   } = props;
@@ -15,11 +17,18 @@ const Styles = (p) => {
   return `
     .c-button {
       ${ButtonBase(props)}
-      background: red;
+      background: ${background};
       border-radius: ${borderRadius};
       font-size: ${fontSize};
+
+      &:hover {
+        background: lighten(${background}, 4);
+      }
+      &:active {
+        background: darken(${background}, 4);
+      }
     }
   `;
 };
 
-module.exports = Styles;
+module.exports = Button;

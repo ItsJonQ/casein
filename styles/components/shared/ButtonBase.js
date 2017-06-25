@@ -1,11 +1,17 @@
 const defaultProps = {
   appearance: true,
+  userSelect: true,
 };
 
-const Style = (props = defaultProps) => {
+const ButtonBase = (p) => {
+  const props = Object.assign({}, defaultProps, p);
   const appearance = !props.appearance ? '' : `
     -webkit-appearance: none;
     appearance: none;
+  `;
+  const userSelect = !props.userSelect ? '' : `
+    -webkit-user-select: none;
+    user-select: none;
   `;
 
   return `
@@ -14,9 +20,8 @@ const Style = (props = defaultProps) => {
     cursor: pointer;
     outline: none;
     vertical-align: middle;
-    -webkit-user-select: none;
-    user-select: none;
+    ${userSelect}
   `;
 };
 
-module.exports = Style;
+module.exports = ButtonBase;
