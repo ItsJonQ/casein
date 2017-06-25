@@ -6,22 +6,22 @@ Experimenting!
 
 Running `node index.js` will output:
 
-```
-    .c-button {
+```css
+.c-button {
 
 
-    -webkit-appearance: none;
-    appearance: none;
+-webkit-appearance: none;
+appearance: none;
 
-    box-sizing: border-box;
-    cursor: pointer;
-    outline: none;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    user-select: none;
+box-sizing: border-box;
+cursor: pointer;
+outline: none;
+vertical-align: middle;
+-webkit-user-select: none;
+user-select: none;
 
-      background: red;
-      border-radius: 4px;
-      font-size: 14px;
-    }
+    background: red;
+    border-radius: 4px;
+    font-size: 14px;
+}
 ```
