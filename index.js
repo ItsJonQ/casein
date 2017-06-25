@@ -1,3 +1,4 @@
 const main = require('./styles/main');
+const build = require('./build');
 
-console.log(main);
+build(main);

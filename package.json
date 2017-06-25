@@ -12,5 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/itsjonq/casein.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash.isfunction": "3.0.8",
+    "lodash.kebabcase": "4.1.1",
+    "mkdirp": "0.5.1",
+    "node-sass": "4.5.3"
+  }
 }

@@ -1,4 +1,5 @@
 const ButtonBase = require('./shared/ButtonBase');
+const renderProps = require('../../lib/Casein').renderProps;
 
 const defaultProps = {
   background: 'red',
@@ -10,16 +11,12 @@ const Button = (p) => {
   const props = Object.assign({}, defaultProps, p);
   const {
     background,
-    borderRadius,
-    fontSize,
   } = props;
 
   return `
     .c-button {
       ${ButtonBase(props)}
-      background: ${background};
-      border-radius: ${borderRadius};
-      font-size: ${fontSize};
+      ${renderProps(props)}
 
       &:hover {
         background: lighten(${background}, 4);

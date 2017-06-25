@@ -1,4 +1,5 @@
 const Button = require('./components/Button');
+const Rando = require('./rando');
 
 const props = {
   appearance: true,
@@ -6,4 +7,7 @@ const props = {
   userSelect: false,
 };
 
-module.exports = Button(props);
+module.exports = `
+  ${Button()}
+  ${Rando()}
+`;
