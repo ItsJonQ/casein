@@ -1,4 +1,4 @@
-# Jay-C
+# Casein 🔸
 
 Writing Sass/CSS with Javascript
 

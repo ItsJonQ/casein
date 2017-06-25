@@ -1,5 +1,5 @@
 {
-  "name": "jay-c",
+  "name": "casein",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ItsJonQ <itsjonq@gmail.com> (http://jonquach.com)",
-  "homepage": "https://github.com/ItsJonQ/jay-c",
+  "homepage": "https://github.com/ItsJonQ/casein",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsjonq/jay-c.git"
+    "url": "git+https://github.com/itsjonq/casein.git"
   },
   "license": "MIT"
 }
